@@ -274,7 +274,7 @@ export default function ProductsSection() {
                       }} />
                       {item.name}
                     </span>
-                    <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+                    <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
                       {item.tags.map((tag, ti) => (
                         <span key={ti} style={{
                           fontSize: '0.55rem',
@@ -285,7 +285,7 @@ export default function ProductsSection() {
                           padding: '0.125rem 0.4rem',
                           whiteSpace: 'nowrap',
                         }}>
-                          {tag}
+                          {ti > 0 && ' '}{tag}
                         </span>
                       ))}
                     </div>
