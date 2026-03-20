@@ -1,0 +1,30 @@
+# BM5 Comex — Apache config para hospedagem estática (Locaweb)
+Options -Indexes
+
+# GZIP compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache de assets estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 1 day"
+</IfModule>
+
+# Redireciona / para /pt (idioma padrão)
+RewriteEngine On
+RewriteRule ^$ /pt/ [R=302,L]
+
+# Remove extensão .html das URLs (trailingSlash já cuida disso com index.html)
+# Trata 404 corretamente
+ErrorDocument 404 /404.html
+
+# Força HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

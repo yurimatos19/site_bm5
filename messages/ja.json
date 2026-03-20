@@ -23,6 +23,27 @@
     "stat3_label": "認証済みコンプライアンス",
     "ceo_trust": "Osvaldo Matos de Melo Júnior — CEO・創業者 · すべての交渉に自ら関与"
   },
+  "presence": {
+    "stat_ports_label": "運営港湾数",
+    "stat_ports_note": "ブラジル主要港",
+    "stat_countries_label": "対応国数",
+    "stat_countries_note": "グローバルな事業展開",
+    "stat_volume_label": "年間取扱量（MT）",
+    "stat_volume_note": "運営キャパシティ",
+    "stat_years_label": "経験年数",
+    "stat_years_note": "ブラジル・レシフェ創業",
+    "pillars_tag": "企業理念",
+    "pillars_headline": "すべての交渉を導く原則",
+    "mission_tag": "ミッション",
+    "mission_title": "誠実さで市場をつなぐ",
+    "mission_text": "ブラジルの生産者と国際的なバイヤーの間の信頼できる架け橋となり、すべての国際貿易において卓越した業務品質、厳格な文書管理、実質的な成果を提供します。",
+    "vision_tag": "ビジョン",
+    "vision_title": "ブラジル産コモディティのグローバルリファレンス",
+    "vision_text": "ブラジル北東部で最も尊敬される国際貿易会社となり、業務品質、透明性へのコミットメント、認証済みパートナーネットワークで国際的に認知される企業を目指します。",
+    "values_tag": "バリュー",
+    "values_title": "コミットメント、倫理、そして成果",
+    "values_text": "すべての段階において絶対的な誠実さで業務を行います。厳格なコンプライアンス、直接的な関係、そして結果に対する完全な責任——なぜなら、すべての取引は一家族が数十年にわたって築いてきた信頼を体現しているからです。"
+  },
   "about": {
     "tag": "私たちの歩み",
     "headline": "数十年にわたる国際的信頼で築かれたファミリービジネス",

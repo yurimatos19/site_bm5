@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -77,29 +78,18 @@ export default function Nav() {
             style={{
               textDecoration: 'none',
               display: 'flex',
-              flexDirection: 'column',
-              lineHeight: 1,
+              alignItems: 'center',
               flexShrink: 0,
             }}
           >
-            <span style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: '1.75rem',
-              fontWeight: 600,
-              color: 'var(--ivory)',
-              letterSpacing: '-0.02em',
-            }}>
-              BM<span style={{ color: 'var(--gold)' }}>5</span>
-            </span>
-            <span style={{
-              fontSize: '0.5625rem',
-              letterSpacing: '0.22em',
-              textTransform: 'uppercase',
-              color: 'var(--ivory-dim)',
-              marginTop: '1px',
-            }}>
-              Comex
-            </span>
+            <Image
+              src="/logo.png"
+              alt="BM5 Comex"
+              width={120}
+              height={44}
+              style={{ objectFit: 'contain', objectPosition: 'left center' }}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

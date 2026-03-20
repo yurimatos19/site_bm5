@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations , setRequestLocale} from 'next-intl/server';
 import LeadershipSection from '@/components/LeadershipSection';
 import type { Metadata } from 'next';
 
@@ -8,6 +8,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'leadership' });
   const title       = t('tag');
   const description = t('headline');

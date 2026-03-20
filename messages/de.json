@@ -23,6 +23,27 @@
     "stat3_label": "Verifizierte Compliance",
     "ceo_trust": "Osvaldo Matos de Melo Júnior — CEO & Gründer · Führt jede Verhandlung persönlich"
   },
+  "presence": {
+    "stat_ports_label": "Betriebene Häfen",
+    "stat_ports_note": "Wichtigste brasilianische Häfen",
+    "stat_countries_label": "Bediente Länder",
+    "stat_countries_note": "Aktive globale Präsenz",
+    "stat_volume_label": "Jahresvolumen (MT)",
+    "stat_volume_note": "Operationskapazität",
+    "stat_years_label": "Jahre Erfahrung",
+    "stat_years_note": "Gegründet in Recife, Brasilien",
+    "pillars_tag": "Institutionelle Identität",
+    "pillars_headline": "Grundsätze, die jede Verhandlung leiten",
+    "mission_tag": "Mission",
+    "mission_title": "Märkte mit Integrität verbinden",
+    "mission_text": "Die vertrauenswürdige Brücke zwischen brasilianischen Produzenten und internationalen Käufern zu sein und operative Exzellenz, rigorose Dokumentation und echte Ergebnisse bei jedem internationalen Handelsgeschäft zu liefern.",
+    "vision_tag": "Vision",
+    "vision_title": "Globale Referenz für brasilianische Rohstoffe",
+    "vision_text": "Das angesehenste Unternehmen für internationalen Handel in Nordostbrasilien zu werden, international anerkannt für die Qualität seiner Operationen und sein Netzwerk geprüfter Partner.",
+    "values_tag": "Werte",
+    "values_title": "Engagement, Ethik und Ergebnisse",
+    "values_text": "Wir agieren bei jedem Schritt mit absoluter Integrität. Rigorose Compliance, direkte Beziehungen und volle Verantwortung für Ergebnisse — denn jede Operation steht für den Ruf von Jahrzehnten, aufgebaut von einer Familie."
+  },
   "about": {
     "tag": "Unsere Geschichte",
     "headline": "Ein Familienunternehmen, aufgebaut auf Jahrzehnten internationalen Vertrauens",

@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 
+export const dynamic = 'force-static';
+
 const BASE_URL = 'https://bm5comex.com';
 const LOCALES  = ['pt', 'en', 'de', 'zh', 'es', 'fr', 'ja'] as const;
 const PAGES: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]['changeFrequency'] }[] = [

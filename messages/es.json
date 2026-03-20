@@ -23,6 +23,27 @@
     "stat3_label": "Cumplimiento Verificado",
     "ceo_trust": "Osvaldo Matos de Melo Júnior — CEO & Fundador · Atiende personalmente cada negociación"
   },
+  "presence": {
+    "stat_ports_label": "Puertos Operados",
+    "stat_ports_note": "Principales puertos brasileños",
+    "stat_countries_label": "Países Atendidos",
+    "stat_countries_note": "Presencia global activa",
+    "stat_volume_label": "Volumen Anual (MT)",
+    "stat_volume_note": "Capacidad operativa",
+    "stat_years_label": "Años de Experiencia",
+    "stat_years_note": "Fundada en Recife, Brasil",
+    "pillars_tag": "Identidad Institucional",
+    "pillars_headline": "Principios que guían cada negociación",
+    "mission_tag": "Misión",
+    "mission_title": "Conectar mercados con integridad",
+    "mission_text": "Ser el puente de confianza entre productores brasileños y compradores internacionales, entregando excelencia operativa, rigor documental y resultados reales en cada operación de comercio exterior.",
+    "vision_tag": "Visión",
+    "vision_title": "Referencia global en commodities brasileñas",
+    "vision_text": "Convertirnos en la empresa de comercio exterior más respetada del Nordeste de Brasil, reconocida internacionalmente por la calidad de las operaciones y la red de socios verificados.",
+    "values_tag": "Valores",
+    "values_title": "Compromiso, ética y resultados",
+    "values_text": "Actuamos con integridad absoluta en cada etapa. Cumplimiento riguroso, relaciones directas y plena responsabilidad sobre los resultados — porque cada operación representa la reputación de décadas construida por una familia."
+  },
   "about": {
     "tag": "Nuestra Historia",
     "headline": "Una empresa familiar construida sobre décadas de confianza internacional",

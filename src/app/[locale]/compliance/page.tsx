@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations , setRequestLocale} from 'next-intl/server';
 import ComplianceSection from '@/components/ComplianceSection';
 import type { Metadata } from 'next';
 
@@ -8,6 +8,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'compliance' });
   const title       = t('tag');
   const description = t('sub');

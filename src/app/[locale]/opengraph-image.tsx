@@ -5,6 +5,11 @@ import { getTranslations } from 'next-intl/server';
 export const alt         = 'BM5 Comex — Inteligência Global em Commodities';
 export const size        = { width: 1200, height: 630 };
 export const contentType = 'image/png';
+export const dynamic     = 'force-static';
+
+export function generateStaticParams() {
+  return ['pt', 'en', 'de', 'zh', 'es', 'fr', 'ja'].map(locale => ({ locale }));
+}
 
 export default async function OGImage({
   params,

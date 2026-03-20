@@ -23,6 +23,27 @@
     "stat3_label": "合规认证",
     "ceo_trust": "Osvaldo Matos de Melo Júnior — 首席执行官兼创始人 · 亲自主导每一次商业谈判"
   },
+  "presence": {
+    "stat_ports_label": "运营港口",
+    "stat_ports_note": "巴西主要港口",
+    "stat_countries_label": "服务国家",
+    "stat_countries_note": "活跃的全球业务",
+    "stat_volume_label": "年贸易量（公吨）",
+    "stat_volume_note": "运营能力",
+    "stat_years_label": "经验年限",
+    "stat_years_note": "创立于巴西累西腓",
+    "pillars_tag": "企业理念",
+    "pillars_headline": "指导每一次商业谈判的原则",
+    "mission_tag": "使命",
+    "mission_title": "以诚信连接市场",
+    "mission_text": "成为巴西生产商与国际买家之间值得信赖的桥梁，在每一次国际贸易中提供卓越的运营能力、严格的文件管理和真实的成果。",
+    "vision_tag": "愿景",
+    "vision_title": "巴西大宗商品的全球标杆",
+    "vision_text": "成为巴西东北部最受尊敬的国际贸易公司，以卓越的运营质量、高度的透明度和经过验证的合作伙伴网络获得国际认可。",
+    "values_tag": "价值观",
+    "values_title": "承诺、道德与成果",
+    "values_text": "我们在每一个环节都以绝对诚信行事。严格合规、直接合作关系和对结果的全面负责——因为每一次操作都代表着一个家族数十年积累的声誉。"
+  },
   "about": {
     "tag": "我们的故事",
     "headline": "数十年国际信任筑就的家族企业",

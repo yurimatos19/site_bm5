@@ -23,6 +23,27 @@
     "stat3_label": "Conformité Vérifiée",
     "ceo_trust": "Osvaldo Matos de Melo Júnior — PDG & Fondateur · Dirige personnellement chaque négociation"
   },
+  "presence": {
+    "stat_ports_label": "Ports Opérés",
+    "stat_ports_note": "Principaux ports brésiliens",
+    "stat_countries_label": "Pays Desservis",
+    "stat_countries_note": "Présence mondiale active",
+    "stat_volume_label": "Volume Annuel (MT)",
+    "stat_volume_note": "Capacité opérationnelle",
+    "stat_years_label": "Ans d'Expérience",
+    "stat_years_note": "Fondée à Recife, Brésil",
+    "pillars_tag": "Identité Institutionnelle",
+    "pillars_headline": "Des principes qui guident chaque négociation",
+    "mission_tag": "Mission",
+    "mission_title": "Connecter les marchés avec intégrité",
+    "mission_text": "Être le pont de confiance entre les producteurs brésiliens et les acheteurs internationaux, en délivrant l'excellence opérationnelle, la rigueur documentaire et de vrais résultats dans chaque opération.",
+    "vision_tag": "Vision",
+    "vision_title": "Référence mondiale en matières premières brésiliennes",
+    "vision_text": "Devenir l'entreprise de commerce international la plus respectée du Nordeste brésilien, reconnue mondialement pour la qualité de ses opérations et son réseau de partenaires vérifiés.",
+    "values_tag": "Valeurs",
+    "values_title": "Engagement, éthique et résultats",
+    "values_text": "Nous agissons avec une intégrité absolue à chaque étape. Conformité rigoureuse, relations directes et responsabilité totale des résultats — car chaque opération représente la réputation de décennies bâtie par une famille."
+  },
   "about": {
     "tag": "Notre Histoire",
     "headline": "Une entreprise familiale bâtie sur des décennies de confiance internationale",

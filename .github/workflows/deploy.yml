@@ -1,0 +1,40 @@
+name: Deploy via FTP — Locaweb
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (export estático)
+        run: npm run build
+        env:
+          CONTACT_TO_EMAIL:   ${{ secrets.CONTACT_TO_EMAIL }}
+          CONTACT_FROM_EMAIL: ${{ secrets.CONTACT_FROM_EMAIL }}
+          RESEND_API_KEY:     ${{ secrets.RESEND_API_KEY }}
+
+      - name: FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+        with:
+          host:      ${{ secrets.HOST }}
+          user:      ${{ secrets.USER }}
+          password:  ${{ secrets.PASS }}
+          localDir:  "out"
+          remoteDir: "/"
