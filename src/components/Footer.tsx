@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 
 const NAV_ITEMS = [
@@ -36,24 +37,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href={`/${locale}`} style={{ textDecoration: 'none', display: 'inline-block', marginBottom: '1rem' }}>
-              <div style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: '2rem',
-                fontWeight: 600,
-                color: 'var(--ivory)',
-                letterSpacing: '-0.02em',
-                lineHeight: 1,
-              }}>
-                BM<span style={{ color: 'var(--gold)' }}>5</span>
-              </div>
-              <div style={{
-                fontSize: '0.5625rem',
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                color: 'var(--ivory-dim)',
-              }}>
-                Comex
-              </div>
+              <Image
+                src="/logo.png"
+                alt="BM5 Comex"
+                width={120}
+                height={48}
+                style={{ width: 'auto', height: '40px', display: 'block' }}
+              />
             </Link>
             <p style={{
               fontSize: '0.8125rem',

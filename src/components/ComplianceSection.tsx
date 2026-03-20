@@ -69,7 +69,7 @@ export default function ComplianceSection() {
     <section
       ref={ref}
       className="section"
-      style={{ position: 'relative', overflow: 'hidden' }}
+      style={{ background: 'var(--navy)', position: 'relative', overflow: 'hidden' }}
     >
       {/* BG large text */}
       <div style={{
