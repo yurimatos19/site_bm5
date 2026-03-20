@@ -37,4 +37,4 @@ jobs:
           user:      ${{ secrets.USER }}
           password:  ${{ secrets.PASS }}
           localDir:  "out"
-          remoteDir: "/"
+          remoteDir: "web"   # Locaweb Windows hosting → pasta raiz é 'web'
