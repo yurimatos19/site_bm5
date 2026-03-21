@@ -43,8 +43,6 @@ const CATEGORIES = [
       { name: 'IC 150', tags: ['Granulado'] },
       { name: 'VHP 600 / 1200', tags: ['Bruto'] },
       { name: 'Demerara', tags: ['Semi-refinado'] },
-      { name: 'Pedra de Fel', tags: ['Bruto'] },
-      { name: 'Uréia', tags: ['Granel'] },
     ],
     highlight: true,
   },

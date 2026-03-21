@@ -21,6 +21,7 @@ export default function HowWeOperateSection() {
     t('guarantee3'),
     t('guarantee4'),
     t('guarantee5'),
+    t('guarantee6'),
   ];
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(true);
