@@ -58,7 +58,7 @@ export default function ShipDivider() {
           letterSpacing: '-0.02em',
         }}>
           Do Porto de Santos ao mundo —<br />
-          <em style={{ color: 'var(--gold)', fontStyle: 'italic' }}>500.000 toneladas</em> em movimento
+          <em style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Origem Brasileira</em>, destino global
         </p>
         <div style={{
           display: 'flex',

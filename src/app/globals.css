@@ -3,18 +3,18 @@
 
 /* ─── Design Tokens ─────────────────────────────────────────────── */
 :root {
-  --navy:       #05070D;
-  --navy-mid:   #080B15;
-  --navy-card:  #0B1020;
-  --navy-line:  rgba(255,255,255,0.06);
-  --gold:       #C4963A;
-  --gold-light: #DFB56A;
-  --gold-bright: #EAC97A;
-  --gold-dim:   #7A5C20;
-  --gold-glow:  rgba(196,150,58,0.2);
-  --ivory:      #F2EDE3;
-  --ivory-mid:  #C8C0A8;
-  --ivory-dim:  rgba(200,192,168,0.5);
+  --navy:       #07101F;
+  --navy-mid:   #0D1C35;
+  --navy-card:  #132444;
+  --navy-line:  rgba(255,255,255,0.08);
+  --gold:       #D4A53C;
+  --gold-light: #EABF62;
+  --gold-bright: #F5D07A;
+  --gold-dim:   #9A7230;
+  --gold-glow:  rgba(212,165,60,0.25);
+  --ivory:      #F5F0E8;
+  --ivory-mid:  #CEC6AE;
+  --ivory-dim:  rgba(210,202,180,0.7);
   --white:      #FFFFFF;
   --red-accent: #8B2A2A;
 
@@ -50,7 +50,7 @@ body {
   overflow-x: hidden;
   line-height: 1.65;
   /* Subtle radial warmth at top-center */
-  background-image: radial-gradient(ellipse 120% 40% at 50% -5%, rgba(196,150,58,0.04) 0%, transparent 70%);
+  background-image: radial-gradient(ellipse 120% 40% at 50% -5%, rgba(212,165,60,0.07) 0%, transparent 70%);
 }
 
 /* Film grain overlay */
@@ -225,9 +225,9 @@ p { color: var(--ivory-mid); }
 .ticker-wrap {
   width: 100%;
   overflow: hidden;
-  background: rgba(196,150,58,0.04);
-  border-top: 1px solid rgba(196,150,58,0.1);
-  border-bottom: 1px solid rgba(196,150,58,0.1);
+  background: rgba(212,165,60,0.07);
+  border-top: 1px solid rgba(212,165,60,0.18);
+  border-bottom: 1px solid rgba(212,165,60,0.18);
   padding: 0.625rem 0;
 }
 .ticker-inner {
@@ -242,7 +242,7 @@ p { color: var(--ivory-mid); }
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--gold-dim);
+  color: var(--gold);
   white-space: nowrap;
 }
 @keyframes ticker {

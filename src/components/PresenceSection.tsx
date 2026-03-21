@@ -82,10 +82,10 @@ export default function PresenceSection() {
   }, []);
 
   const statsGlobal = [
-    { icon: <IconGlobe />,     value: 40,     suffix: '+',  label: 'Países Atendidos',     note: 'Presença global ativa'         },
-    { icon: <IconContainer />, value: 500000, suffix: '+',  label: 'Toneladas / Ano',      note: 'Capacidade total de operação'  },
-    { icon: <IconPort />,      value: 5,      suffix: '',   label: 'Portos Operados',      note: 'Do Nordeste ao Sul do Brasil'  },
-    { icon: <IconYears />,     value: 38,     suffix: '+',  label: 'Anos de Experiência',  note: 'No mercado desde 1988'         },
+    { icon: <IconGlobe />,     value: 40,  suffix: '+',  label: 'Países Atendidos',     note: 'Presença global ativa'        },
+    { icon: <IconPort />,      value: 5,   suffix: '',   label: 'Portos Operados',      note: 'Do Nordeste ao Sul do Brasil' },
+    { icon: <IconYears />,     value: 38,  suffix: '+',  label: 'Anos de Experiência',  note: 'No mercado desde 1988'        },
+    { icon: <IconContainer />, value: 7,   suffix: '',   label: 'Mercados Globais',     note: 'Regiões atendidas'            },
   ];
 
   const statsBrasil = [
