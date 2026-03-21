@@ -142,6 +142,50 @@ export default function ComplianceSection() {
           ))}
         </div>
 
+        {/* Photo divider */}
+        <div style={{
+          height: '180px',
+          overflow: 'hidden',
+          position: 'relative',
+          marginBottom: '4rem',
+          background: 'var(--navy)',
+        }}>
+          <div style={{
+            position: 'absolute', inset: 0,
+            backgroundImage: "url('/finance-docs.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 40%',
+            opacity: 0.35,
+          }} />
+          <div style={{
+            position: 'absolute', inset: 0,
+            background: 'linear-gradient(90deg, rgba(6,13,26,0.8) 0%, transparent 50%, rgba(6,13,26,0.8) 100%)',
+          }} />
+          <div style={{
+            position: 'absolute', inset: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            flexDirection: 'column', gap: '0.5rem',
+          }}>
+            <div style={{
+              fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.25em',
+              textTransform: 'uppercase', color: 'var(--gold)', opacity: 0.7,
+            }}>
+              Instrumentos Bancários Internacionais
+            </div>
+            <div style={{
+              display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center',
+            }}>
+              {['MT199', 'MT799', 'MT760', 'MT700', 'SBLC', 'DLC'].map(term => (
+                <span key={term} style={{
+                  fontSize: '0.875rem', fontWeight: 700, letterSpacing: '0.05em',
+                  color: 'var(--ivory)', opacity: 0.85,
+                  fontFamily: 'var(--font-display)',
+                }}>{term}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Flow */}
         <div style={{
           display: 'grid',

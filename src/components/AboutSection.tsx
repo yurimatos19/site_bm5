@@ -144,6 +144,26 @@ export default function AboutSection() {
             flexDirection: 'column',
             gap: '1.25rem',
           }}>
+            {/* Photo strip */}
+            <div style={{ height: '200px', overflow: 'hidden', position: 'relative', marginBottom: '1.5rem', borderRadius: '2px' }}>
+              <div style={{
+                position: 'absolute', inset: 0,
+                backgroundImage: "url('/grain-field.jpg')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }} />
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'linear-gradient(to bottom, rgba(6,13,26,0.1) 0%, rgba(6,13,26,0.6) 100%)',
+              }} />
+              <div style={{
+                position: 'absolute', bottom: '1rem', left: '1.25rem',
+                fontSize: '0.625rem', fontWeight: 700, letterSpacing: '0.2em',
+                textTransform: 'uppercase', color: 'rgba(196,150,58,0.8)',
+              }}>
+                Agronegócio Brasileiro · Origem Certificada
+              </div>
+            </div>
             {features.map((f, i) => (
               <div
                 key={i}
