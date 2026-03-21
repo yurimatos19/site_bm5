@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 
 function useInView2(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
-  const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState(true);
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setInView(true); }, { threshold });
     if (ref.current) obs.observe(ref.current);
@@ -17,7 +17,7 @@ function useInView2(threshold = 0.15) {
 
 function useInView(threshold = 0.2) {
   const ref = useRef<HTMLDivElement>(null);
-  const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState(true);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setInView(true); },

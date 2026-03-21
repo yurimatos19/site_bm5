@@ -75,7 +75,7 @@ const GUARANTEES = [
 
 export default function HowWeOperateSection() {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const obs = new IntersectionObserver(

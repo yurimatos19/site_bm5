@@ -73,7 +73,7 @@ export default function PresenceSection() {
   const t = useTranslations('presence');
 
   const portsRef = useRef<HTMLDivElement>(null);
-  const [portsVisible, setPortsVisible] = useState(false);
+  const [portsVisible, setPortsVisible] = useState(true);
 
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setPortsVisible(true); }, { threshold: 0.1 });
