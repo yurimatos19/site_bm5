@@ -2,26 +2,28 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-
-const CREDENTIALS = [
-  { label: 'Nomeado pelo Presidente da República',  note: '1º Diretor de Marketing e Inteligência da EMBRATUR'       },
-  { label: 'Assessor do Ministro',                  note: 'Ministério do Meio Ambiente · Governo Federal'             },
-  { label: '7 Pós-Graduações & MBAs',               note: 'Comex · Ciência Política · Marketing · Gestão Pública'    },
-  { label: '+38 anos no mercado',                   note: 'Gestão empresarial desde 1988'                             },
-  { label: '15+ países visitados',                  note: 'Pesquisa profissional em gestão e comércio exterior'       },
-  { label: 'CEO — BM5 & BM4',                       note: 'Comex · Investimentos · Inteligência Estratégica'          },
-];
-
-const HONORS = [
-  'Ordem do Mérito Aeronáutica — Comendador',
-  'Comenda José Mariano — Maior honraria de Recife',
-  'Medalha do Mérito Pernambucano — Policial Militar Ouro',
-  'Medalha do Mérito Pernambucano — Policial Civil Ouro',
-  'Prêmio Expressão em Administração — CRA/PE',
-  'Título de Cidadão de Olinda',
-];
+import { useTranslations } from 'next-intl';
 
 export default function OsvaldoSection() {
+  const t = useTranslations('osvaldo');
+
+  const CREDENTIALS = [
+    { label: t('cred0_label'), note: t('cred0_note') },
+    { label: t('cred1_label'), note: t('cred1_note') },
+    { label: t('cred2_label'), note: t('cred2_note') },
+    { label: t('cred3_label'), note: t('cred3_note') },
+    { label: t('cred4_label'), note: t('cred4_note') },
+    { label: t('cred5_label'), note: t('cred5_note') },
+  ];
+
+  const HONORS = [
+    t('honor0'),
+    t('honor1'),
+    t('honor2'),
+    t('honor3'),
+    t('honor4'),
+    t('honor5'),
+  ];
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(true);
 
@@ -73,7 +75,7 @@ export default function OsvaldoSection() {
           transform: visible ? 'translateY(0)' : 'translateY(16px)',
           transition: 'opacity 0.6s ease, transform 0.6s ease',
         }}>
-          <span className="eyebrow">Liderança que Fecha Operações</span>
+          <span className="eyebrow">{t('eyebrow')}</span>
           <span style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, rgba(196,150,58,0.3), transparent)' }} />
         </div>
 
@@ -148,7 +150,7 @@ export default function OsvaldoSection() {
                 fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase',
                 color: 'var(--gold)', opacity: 0.7, marginBottom: '0.875rem',
               }}>
-                Condecorações
+                {t('honors_title')}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 {HONORS.map((h, i) => (
@@ -199,9 +201,7 @@ export default function OsvaldoSection() {
               paddingLeft: '1.5rem',
               marginBottom: '1rem',
             }}>
-              Cada negociação internacional começa antes da mesa — começa na inteligência aplicada,
-              na rede certa de contatos e no rigor documental que garante que nenhuma operação
-              fracasse por falta de preparo.
+              {t('quote_text')}
             </blockquote>
 
             <p style={{
@@ -211,9 +211,7 @@ export default function OsvaldoSection() {
               lineHeight: 1.7,
               marginBottom: '2.5rem',
             }}>
-              Em 38 anos de mercado — do Governo Federal à iniciativa privada, de Recife a mais de
-              15 países — aprendi que a diferença entre fechar ou perder um contrato está sempre
-              no nível de preparo de quem lidera a operação.
+              {t('quote_body')}
             </p>
 
             {/* Presidential badge */}
@@ -230,10 +228,10 @@ export default function OsvaldoSection() {
               </svg>
               <div>
                 <div style={{ fontSize: '0.625rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold)', opacity: 0.8 }}>
-                  Nomeação Presidencial
+                  {t('presidential_label')}
                 </div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--ivory-dim)', marginTop: '0.15rem' }}>
-                  1º Diretor de Marketing e Inteligência da EMBRATUR · Mandato de 4 anos
+                  {t('presidential_note')}
                 </div>
               </div>
             </div>
@@ -243,7 +241,7 @@ export default function OsvaldoSection() {
               fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase',
               color: 'var(--gold)', opacity: 0.7, marginBottom: '1rem',
             }}>
-              Formação & Experiência
+              {t('credentials_title')}
             </div>
             <div className="osvaldo-creds-grid">
               {CREDENTIALS.map((c, i) => (

@@ -1,6 +1,9 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export default function ShipDivider() {
+  const t = useTranslations('shipDivider');
   return (
     <div style={{ position: 'relative', height: '420px', overflow: 'hidden' }}>
       {/* Ship photo */}
@@ -44,7 +47,7 @@ export default function ShipDivider() {
             color: 'var(--gold)',
             fontWeight: 500,
           }}>
-            Origem Brasileira · Destino Global
+            {t('tag')}
           </span>
           <span style={{ display: 'block', width: '60px', height: '1px', background: 'var(--gold-dim)' }} />
         </div>
@@ -57,8 +60,8 @@ export default function ShipDivider() {
           maxWidth: '800px',
           letterSpacing: '-0.02em',
         }}>
-          Do Porto de Santos ao mundo —<br />
-          <em style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Origem Brasileira</em>, destino global
+          {t('headline_pre')}<br />
+          <em style={{ color: 'var(--gold)', fontStyle: 'italic' }}>{t('headline_em')}</em>{t('headline_post')}
         </p>
         <div style={{
           display: 'flex',

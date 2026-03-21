@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import WhatsAppFAB from '@/components/WhatsAppFAB';
+import SectionNav from '@/components/SectionNav';
 import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -127,6 +128,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer />
           <WhatsAppFAB />
+          <SectionNav />
         </NextIntlClientProvider>
       </body>
     </html>

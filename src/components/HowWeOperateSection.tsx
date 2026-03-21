@@ -1,79 +1,27 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
-const STEPS = [
-  {
-    n: '01',
-    title: 'ICPO + KYC',
-    body: 'Comprador envia ICPO com KYC completo e BCL/RWA verificável para o e-mail corporativo de compliance.',
-    tag: 'Iniciação',
-  },
-  {
-    n: '02',
-    title: 'FCO do Vendedor',
-    body: 'Vendedor emite a Full Corporate Offer (FCO) com condições, preço e especificações do produto.',
-    tag: 'Oferta',
-  },
-  {
-    n: '03',
-    title: 'POF via MT799',
-    body: 'Comprador assina a FCO e envia Proof of Funds (POF) via MT799 bank-to-bank.',
-    tag: 'Fundos',
-  },
-  {
-    n: '04',
-    title: 'SPA Preliminar + SBLC',
-    body: 'Vendedor emite SPA preliminar. Comprador revisa, assina e envia o texto da SBLC para checagem no banco do vendedor.',
-    tag: 'Contrato',
-  },
-  {
-    n: '05',
-    title: 'SPA Final — 15 dias',
-    body: 'Vendedor devolve SPA final assinado. Após aprovação da minuta, a SBLC deve ser emitida em até 15 dias.',
-    tag: 'Prazo',
-  },
-  {
-    n: '06',
-    title: 'MT760 → POP → SBLC Operativa',
-    body: 'Comprador envia verbiage da MT760. Vendedor aceita e envia POP bank-to-bank. Com POP validada, comprador emite SBLC operativa.',
-    tag: 'Instrumento',
-  },
-  {
-    n: '07',
-    title: 'Confirmação de SWIFTs',
-    body: 'Comprador encaminha cópia de todos os SWIFTs ao banco do vendedor para conferência e validação.',
-    tag: 'Confirmação',
-  },
-  {
-    n: '08',
-    title: 'Proforma Invoice',
-    body: 'Vendedor emite Proforma Invoice; comprador revisa e assina formalizando as condições do embarque.',
-    tag: 'Fatura',
-  },
-  {
-    n: '09',
-    title: 'Performance Bond 2%',
-    body: 'PB de 2% emitida pelo vendedor em até 10 dias após a ativação do instrumento financeiro.',
-    tag: 'Garantia',
-  },
-  {
-    n: '10',
-    title: 'Embarque → MT103',
-    body: 'Documentos originais de embarque seguem ao banco do comprador, que libera o MT103. O ciclo se repete a cada remessa.',
-    tag: 'Entrega',
-  },
-];
-
-const GUARANTEES = [
-  'SBLC transferível, divisível e irrevogável (12+1)',
-  '100% cashback garantido conforme instrumento',
-  '1 mês de valor facial em segurança',
-  'Bancos Top-50 em ambas as pontas',
-  'Primeira entrega em 30–45 dias após SBLC ativada',
-];
+const STEP_NUMBERS = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'];
 
 export default function HowWeOperateSection() {
+  const t = useTranslations('howWeOperate');
+
+  const STEPS = STEP_NUMBERS.map((n) => ({
+    n,
+    title: t(`step${n}_title`),
+    body: t(`step${n}_body`),
+    tag: t(`step${n}_tag`),
+  }));
+
+  const GUARANTEES = [
+    t('guarantee1'),
+    t('guarantee2'),
+    t('guarantee3'),
+    t('guarantee4'),
+    t('guarantee5'),
+  ];
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(true);
 
@@ -116,10 +64,10 @@ export default function HowWeOperateSection() {
         }} className="how-header">
           <div>
             <span className="eyebrow" style={{ display: 'block', marginBottom: '1rem' }}>
-              Procedimentos ICC / OMC
+              {t('eyebrow')}
             </span>
             <span className="gold-rule" style={{ display: 'block', marginBottom: '1rem' }} />
-            <h2 className="section-headline">Como Operamos</h2>
+            <h2 className="section-headline">{t('headline')}</h2>
           </div>
           <div>
             <p style={{
@@ -129,7 +77,7 @@ export default function HowWeOperateSection() {
               lineHeight: 1.75,
               textAlign: 'right',
             }}>
-              Fluxo padronizado para bancos Top-50 · Modelo 12 meses rolling · SLA logístico garantido
+              {t('subtitle')}
             </p>
           </div>
         </div>
@@ -216,7 +164,7 @@ export default function HowWeOperateSection() {
             opacity: 0.7,
             marginBottom: '1rem',
           }}>
-            Garantias Exigidas — Tier Banco Top-50
+            {t('guarantees_title')}
           </div>
           <div className="how-guarantees">
             {GUARANTEES.map((g, i) => (
@@ -248,13 +196,10 @@ export default function HowWeOperateSection() {
             opacity: 0.7,
             marginBottom: '0.625rem',
           }}>
-            Cláusula de Veracidade — Obrigatória em Todas as Operações
+            {t('compliance_title')}
           </div>
           <p style={{ fontSize: '0.8125rem', color: 'var(--ivory-dim)', lineHeight: 1.75, margin: 0 }}>
-            Todas as negociações intermediadas pela BM5 exigem declaração de veracidade sob plena responsabilidade civil e penal.
-            Seller deve possuir controle direto ou autorização formal do produto (POP, CIS, certificados). Buyer deve apresentar
-            prova de fundos legítima (BCL, RWA, POF). Documentação falsa ou capacidade financeira simulada resultará em exclusão
-            imediata da operação e reporte às autoridades competentes.
+            {t('compliance_body')}
           </p>
         </div>
       </div>

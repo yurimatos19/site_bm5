@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import AboutSection from '@/components/AboutSection';
 import PresenceSection from '@/components/PresenceSection';
 import ShipDivider from '@/components/ShipDivider';
+import TrustBar from '@/components/TrustBar';
 import ProductsSection from '@/components/ProductsSection';
 import OsvaldoSection from '@/components/OsvaldoSection';
 import HowWeOperateSection from '@/components/HowWeOperateSection';
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AboutSection />
       <PresenceSection />
       <ShipDivider />
+      <TrustBar />
       <ProductsSection />
       <OsvaldoSection />
       <HowWeOperateSection />
