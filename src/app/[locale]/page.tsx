@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import { setRequestLocale } from 'next-intl/server';
 import AboutSection from '@/components/AboutSection';
 import PresenceSection from '@/components/PresenceSection';
+import ShipDivider from '@/components/ShipDivider';
 import ProductsSection from '@/components/ProductsSection';
 import OsvaldoSection from '@/components/OsvaldoSection';
 import ComplianceSection from '@/components/ComplianceSection';
@@ -13,6 +14,7 @@ export default function HomePage() {
       <Hero />
       <AboutSection />
       <PresenceSection />
+      <ShipDivider />
       <ProductsSection />
       <OsvaldoSection />
       <ComplianceSection />

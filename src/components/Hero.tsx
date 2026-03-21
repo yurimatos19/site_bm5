@@ -184,7 +184,8 @@ function GlobeCanvas() {
         width: '100%',
         height: '100%',
         pointerEvents: 'none',
-        opacity: 0.9,
+        opacity: 0.7,
+        zIndex: 2,
       }}
     />
   );
@@ -226,16 +227,33 @@ export default function Hero() {
         paddingBottom: '6rem',
         overflow: 'hidden',
       }}>
+        {/* Port photo background */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `url('/hero-port.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 60%',
+          zIndex: 0,
+        }} />
+        {/* Dark overlay over photo */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(135deg, rgba(6,13,26,0.92) 0%, rgba(6,13,26,0.78) 50%, rgba(6,13,26,0.65) 100%)',
+          zIndex: 0,
+        }} />
         {/* Grid background */}
         <div style={{
           position: 'absolute',
           inset: 0,
           backgroundImage: `
-            linear-gradient(rgba(201,168,76,0.035) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(201,168,76,0.035) 1px, transparent 1px)
+            linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px)
           `,
           backgroundSize: '80px 80px',
           pointerEvents: 'none',
+          zIndex: 1,
         }} />
 
         {/* Animated globe / network canvas */}
@@ -248,9 +266,9 @@ export default function Hero() {
           left: 0,
           bottom: 0,
           width: '50%',
-          background: 'linear-gradient(to right, var(--navy) 55%, transparent 100%)',
+          background: 'linear-gradient(to right, rgba(6,13,26,0.6) 55%, transparent 100%)',
           pointerEvents: 'none',
-          zIndex: 1,
+          zIndex: 3,
         }} />
 
         {/* Vertical gold accent line */}
@@ -261,12 +279,12 @@ export default function Hero() {
           bottom: '10%',
           width: '1px',
           background: 'linear-gradient(to bottom, transparent, var(--gold-dim) 20%, var(--gold-dim) 80%, transparent)',
-          opacity: 0.3,
+          opacity: 0.4,
           pointerEvents: 'none',
-          zIndex: 1,
+          zIndex: 3,
         }} />
 
-        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+        <div className="container" style={{ position: 'relative', zIndex: 4 }}>
           <div style={{
             display: 'grid',
             gridTemplateColumns: '1fr auto',

@@ -28,6 +28,7 @@ const CATEGORIES = [
     featuredSub: 'Açúcar Branco Refinado',
     spec: 'Granulado · Exportação Direta',
     accent: '#d4aa50',
+    photo: '/sugar.jpg',
     markets: ['Oriente Médio', 'África', 'Ásia'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -54,6 +55,7 @@ const CATEGORIES = [
     featuredSub: 'Grão & Farelo Premium',
     spec: 'SIF · Halal · Kosher',
     accent: '#b8922e',
+    photo: '/soybeans.jpg',
     markets: ['China', 'Europa', 'Ásia'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -80,6 +82,7 @@ const CATEGORIES = [
     featuredSub: 'Cortes Certificados Halal',
     spec: 'SIF · Halal · Kosher',
     accent: '#c49a3a',
+    photo: '/soy-field.jpg',
     markets: ['Oriente Médio', 'Ásia', 'África'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -259,15 +262,35 @@ export default function ProductsSection() {
                 {cat.icon}
               </div>
 
-              {/* Ghost number */}
-              <div style={{
-                position: 'absolute', top: '1.25rem', right: '1.5rem',
-                fontFamily: 'var(--font-display)', fontSize: '5rem',
-                fontWeight: 700, color: 'rgba(201,168,76,0.035)', lineHeight: 1,
-                userSelect: 'none',
-              }}>
-                {String(ci + 1).padStart(2, '0')}
-              </div>
+              {/* Photo strip */}
+              {'photo' in cat && cat.photo && (
+                <div style={{
+                  height: '160px',
+                  overflow: 'hidden',
+                  position: 'relative',
+                }}>
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    backgroundImage: `url('${cat.photo}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    transition: 'transform 0.6s ease',
+                  }} className="prod-photo-bg" />
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    background: `linear-gradient(to bottom, rgba(6,13,26,0.2) 0%, rgba(6,13,26,0.7) 100%)`,
+                  }} />
+                  {/* Number overlay */}
+                  <div style={{
+                    position: 'absolute', bottom: '0.75rem', right: '1rem',
+                    fontFamily: 'var(--font-display)', fontSize: '3.5rem',
+                    fontWeight: 700, color: `rgba(${cat.accent === '#d4aa50' ? '212,170,80' : cat.accent === '#b8922e' ? '184,146,46' : '196,154,58'},0.25)`,
+                    lineHeight: 1, userSelect: 'none',
+                  }}>
+                    {String(ci + 1).padStart(2, '0')}
+                  </div>
+                </div>
+              )}
 
               <div style={{ padding: 'clamp(1.5rem, 3vw, 2.25rem)', position: 'relative' }}>
                 {/* Category label + icon row */}
@@ -525,6 +548,9 @@ export default function ProductsSection() {
         }
         .prod-featured-card:hover {
           background: var(--navy-mid) !important;
+        }
+        .prod-featured-card:hover .prod-photo-bg {
+          transform: scale(1.05);
         }
         .prod-secondary-grid {
           display: grid;
