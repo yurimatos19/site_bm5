@@ -132,8 +132,18 @@ export default function OsvaldoSection() {
               </div>
             </div>
 
+            {/* Activity photos */}
+            <div style={{ marginTop: '1rem', maxWidth: '340px', margin: '1rem auto 0', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
+              <div style={{ borderRadius: '3px', overflow: 'hidden', border: '1px solid rgba(196,150,58,0.15)', aspectRatio: '4/3' }}>
+                <img src="/osvaldo-palestra.jpg" alt="Osvaldo palestrando" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+              <div style={{ borderRadius: '3px', overflow: 'hidden', border: '1px solid rgba(196,150,58,0.15)', aspectRatio: '4/3' }}>
+                <img src="/osvaldo-entrevista.jpg" alt="Osvaldo em entrevista" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+              </div>
+            </div>
+
             {/* Honors strip */}
-            <div style={{ marginTop: '2rem', maxWidth: '340px', margin: '2rem auto 0' }}>
+            <div style={{ marginTop: '2rem', maxWidth: '340px', margin: '1.5rem auto 0' }}>
               <div style={{
                 fontSize: '0.5rem', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase',
                 color: 'var(--gold)', opacity: 0.7, marginBottom: '0.875rem',

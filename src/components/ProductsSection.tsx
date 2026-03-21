@@ -82,7 +82,7 @@ const CATEGORIES = [
     featuredSub: 'Cortes Certificados Halal',
     spec: 'SIF · Halal · Kosher',
     accent: '#c49a3a',
-    photo: '/soy-field.jpg',
+    photo: '/chicken.jpg',
     markets: ['Oriente Médio', 'Ásia', 'África'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -107,6 +107,7 @@ const CATEGORIES = [
     featuredSub: 'Anidro & Hidratado',
     spec: 'Combustível · Exportação',
     accent: '#b8922e',
+    photo: '/tanker.jpg',
     markets: ['Europa', 'América Central'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -131,6 +132,7 @@ const CATEGORIES = [
     featuredSub: 'Mineração Documentada',
     spec: 'Documentado · Exportação',
     accent: '#a07a28',
+    photo: '/minerals.jpg',
     markets: ['Europa', 'Emirados', 'Ásia'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -154,6 +156,7 @@ const CATEGORIES = [
     featuredSub: 'Verde & Torrado',
     spec: 'Certificado · Origem Brasil',
     accent: '#c49a3a',
+    photo: '/coffee.jpg',
     markets: ['Europa', 'EUA', 'Ásia'],
     icon: (
       <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -433,6 +436,23 @@ export default function ProductsSection() {
                 {cat.icon}
               </div>
 
+              {/* Photo strip for secondary cards */}
+              {'photo' in cat && cat.photo && (
+                <div style={{ height: '110px', overflow: 'hidden', position: 'relative' }}>
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    backgroundImage: `url('${cat.photo}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    transition: 'transform 0.6s ease',
+                  }} className="prod-photo-bg" />
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    background: `linear-gradient(to bottom, rgba(6,13,26,0.15) 0%, rgba(6,13,26,0.65) 100%)`,
+                  }} />
+                </div>
+              )}
+
               <div style={{ padding: 'clamp(1.25rem, 2.5vw, 1.75rem)', position: 'relative' }}>
                 {/* Header row */}
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', marginBottom: '1.25rem' }}>
@@ -557,6 +577,9 @@ export default function ProductsSection() {
           grid-template-columns: repeat(3, 1fr);
           gap: 1.5px;
           background: rgba(201,168,76,0.06);
+        }
+        .prod-secondary-card:hover .prod-photo-bg {
+          transform: scale(1.05);
         }
         @media (max-width: 1024px) {
           .prod-featured-grid { grid-template-columns: repeat(2, 1fr); }
