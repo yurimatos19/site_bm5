@@ -115,7 +115,7 @@
     "kyc_title": "KYC / CIS",
     "kyc_desc": "すべての交渉においてKYC（顧客確認）とCIS（顧客情報シート）を適用し、関係するすべての当事者の完全な透明性とトレーサビリティを確保。",
     "docs_title": "国際文書",
-    "docs_desc": "ICPO、SPA、FCO、LOI、POF、検証可能なBCLおよび大規模国際取引に必要な完全な文書チェーンで運営。",
+    "docs_desc": "ICPO、SPA、FCO、POF、検証可能なBCLおよび大規模国際取引に必要な完全な文書チェーンで運営。",
     "banking_title": "銀行金融手段",
     "banking_desc": "MT199、MT799、MT760、MT700、SBLCおよびDLCを含む取引をサポート。バイヤーとサプライヤーを完全な決済安全性でつなぎます。",
     "network_title": "認定ネットワーク",
@@ -132,7 +132,7 @@
   "contact": {
     "tag": "お問い合わせ",
     "headline": "取引を開始する",
-    "sub": "BM5のオーナーと直接お話ください。本格的な取引には、正式な提案に進む前にKYC書類とLOIが必要です。",
+    "sub": "BM5のオーナーと直接お話ください。本格的な取引には、正式な提案に進む前にICPO + KYC/CIS書類が必要です。",
     "form_name": "氏名",
     "form_company": "会社名",
     "form_email": "法人メールアドレス",

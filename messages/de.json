@@ -115,7 +115,7 @@
     "kyc_title": "KYC / CIS",
     "kyc_desc": "Know Your Customer und Customer Information Sheet werden bei jeder Verhandlung angewendet und gewährleisten vollständige Transparenz und Rückverfolgbarkeit aller beteiligten Parteien.",
     "docs_title": "Internationale Dokumentation",
-    "docs_desc": "Wir arbeiten mit ICPO, SPA, FCO, LOI, POF, verifizierbarem BCL und der vollständigen Dokumentationskette für großvolumige internationale Operationen.",
+    "docs_desc": "Wir arbeiten mit ICPO, SPA, FCO, POF, verifizierbarem BCL und der vollständigen Dokumentationskette für großvolumige internationale Operationen.",
     "banking_title": "Bankinstrumente",
     "banking_desc": "Unterstützung für Operationen mit MT199, MT799, MT760, MT700, SBLC und DLC — Verbindung von Käufern und Lieferanten mit vollständiger Abrechnungssicherheit.",
     "network_title": "Akkreditiertes Netzwerk",
@@ -132,7 +132,7 @@
   "contact": {
     "tag": "Kontakt",
     "headline": "Einen Handel initiieren",
-    "sub": "Sprechen Sie direkt mit den BM5-Eigentümern. Für ernsthafte Operationen benötigen wir KYC-Dokumentation und LOI, bevor wir zu einem formalen Angebot übergehen.",
+    "sub": "Sprechen Sie direkt mit den BM5-Eigentümern. Für ernsthafte Operationen benötigen wir ICPO + KYC/CIS, bevor wir zu einem formalen Angebot übergehen.",
     "form_name": "Vollständiger Name",
     "form_company": "Unternehmen",
     "form_email": "Geschäftliche E-Mail",

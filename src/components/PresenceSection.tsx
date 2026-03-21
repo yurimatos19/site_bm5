@@ -83,8 +83,8 @@ export default function PresenceSection() {
 
   const statsGlobal = [
     { icon: <IconGlobe />,     value: 40,  suffix: '+',  label: 'Países Atendidos',     note: 'Presença global ativa'        },
-    { icon: <IconPort />,      value: 5,   suffix: '',   label: 'Portos Operados',      note: 'Do Nordeste ao Sul do Brasil' },
-    { icon: <IconYears />,     value: 38,  suffix: '+',  label: 'Anos de Experiência',  note: 'No mercado desde 1988'        },
+    { icon: <IconPort />,      value: 5,   suffix: '',   label: 'Portos Seguros no Mundo', note: 'Todos os portos seguros do mundo' },
+    { icon: <IconYears />,     value: 35,  suffix: '+',  label: 'Anos de Experiência',     note: '35 anos no mercado'              },
     { icon: <IconContainer />, value: 7,   suffix: '',   label: 'Mercados Globais',     note: 'Regiões atendidas'            },
   ];
 

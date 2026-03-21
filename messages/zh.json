@@ -115,7 +115,7 @@
     "kyc_title": "KYC / CIS",
     "kyc_desc": "每笔交易均执行「了解您的客户」(KYC)和客户信息表(CIS)程序，确保所有相关方的全面透明性和可追溯性。",
     "docs_title": "国际文件",
-    "docs_desc": "我们使用ICPO、SPA、FCO、LOI、POF、可核实BCL及大型国际业务所需的完整文件链。",
+    "docs_desc": "我们使用ICPO、SPA、FCO、POF、可核实BCL及大型国际业务所需的完整文件链。",
     "banking_title": "银行金融工具",
     "banking_desc": "支持MT199、MT799、MT760、MT700、SBLC和DLC操作，以充分的结算安全保障连接买家与供应商。",
     "network_title": "认证网络",
@@ -132,7 +132,7 @@
   "contact": {
     "tag": "联系我们",
     "headline": "发起贸易合作",
-    "sub": "直接与BM5业主沟通。正式业务合作须先提供KYC文件和意向书(LOI)，方可进入正式提案阶段。",
+    "sub": "直接与BM5业主沟通。正式业务合作须先提供ICPO + KYC/CIS文件，方可进入正式提案阶段。",
     "form_name": "姓名",
     "form_company": "公司名称",
     "form_email": "企业邮箱",
